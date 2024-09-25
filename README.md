@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @kumud875
 - 🌱 I’m currently learning Machine learning
-- 🏢 working as a Associate Software engineer in urban company (Gurgaon)
+- 🏢 Internship At reachcure as full stack web developer 
 - 📫 How to reach me (https://github.com/kumud875/kumud875)
 
 <!---
