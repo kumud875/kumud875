@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @kumud875
-- 🌱 I’m currently learning Machine learning
+- 🌱 I’m currently learning full stack development 
 - 🏢 Internship At reachcure as full stack web developer 
 - 📫 How to reach me (https://github.com/kumud875/kumud875)
 
