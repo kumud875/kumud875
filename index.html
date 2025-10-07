@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2 Pahiya — Two Wheeler Service</title>
+  <meta name="description" content="2 Pahiya provides complete two-wheeler service: engine repair, full bike servicing, engine oil change, and more. Flexible 6-month and 1-year plans." />
+  <meta name="theme-color" content="#e63946" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">2 Pahiya</div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#plans">Plans</a>
+        <a class="cta" href="#lead-form">Get Service</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <h1>Complete Two-Wheeler Service</h1>
+        <p class="tagline">Expert care for 100cc, 125cc, 150cc, 200cc, 250cc and 350cc bikes.</p>
+        <div class="hero-ctas">
+          <a href="#lead-form" class="btn btn-primary">Book Now</a>
+          <a href="#plans" class="btn btn-secondary">View Plans</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards">
+          <article class="card"><h3>Engine Repair</h3><p>Diagnostics and repair for all common engine issues.</p></article>
+          <article class="card"><h3>Full Bike Servicing</h3><p>Complete multi-point check and service for smooth rides.</p></article>
+          <article class="card"><h3>Engine Oil Change</h3><p>Quality engine oil suitable for your bike&rsquo;s CC & model.</p></article>
+          <article class="card"><h3>Brakes & Clutch</h3><p>Inspection, adjustment and replacement as needed.</p></article>
+          <article class="card"><h3>Chain & Sprocket</h3><p>Cleaning, lubrication, tensioning and replacements.</p></article>
+          <article class="card"><h3>Electricals</h3><p>Battery, lights, wiring and switchgear checks.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="plans" class="section alt">
+      <div class="container">
+        <h2>Maintenance Plans</h2>
+        <div class="plan-grid">
+          <article class="plan">
+            <h3>6 Months Plan</h3>
+            <ul>
+              <li>Up to 5 services included</li>
+              <li>Pay only for engine oil</li>
+              <li>Covers 100cc to 350cc bikes</li>
+            </ul>
+            <div class="price-row">
+              <span class="note">Engine oil cost billed separately</span>
+            </div>
+          </article>
+
+          <article class="plan featured">
+            <h3>1 Year Plan</h3>
+            <ul>
+              <li>Unlimited services for 12 months</li>
+              <li>Pay only for engine oil</li>
+              <li>Covers 100cc to 350cc bikes</li>
+            </ul>
+            <div class="price-row">
+              <span class="note">Engine oil cost billed separately</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="lead-form" class="section">
+      <div class="container">
+        <h2>Book a Service / Get a Callback</h2>
+        <p class="sub">Share your details and we&rsquo;ll contact you shortly.</p>
+        <form id="leadGenForm" class="lead-form" method="POST">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Full Name</label>
+              <input id="name" name="Name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input id="phone" name="Phone" type="tel" inputmode="tel" placeholder="10-15 digit number" pattern="[0-9]{10,15}" required />
+              <small class="hint">Digits only, no spaces</small>
+            </div>
+            <div class="form-field">
+              <label for="cc">Bike CC</label>
+              <select id="cc" name="Bike CC" required>
+                <option value="" disabled selected>Select CC</option>
+                <option>100cc</option>
+                <option>125cc</option>
+                <option>150cc</option>
+                <option>200cc</option>
+                <option>250cc</option>
+                <option>350cc</option>
+              </select>
+            </div>
+            <div class="form-field form-field-full">
+              <label for="address">Full Address</label>
+              <textarea id="address" name="Address" rows="3" placeholder="House/Flat, Street, Area, City, Pincode" required></textarea>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button id="submitBtn" type="submit" class="btn btn-primary">Submit</button>
+            <span id="formStatus" role="status" aria-live="polite"></span>
+          </div>
+          <noscript>
+            <p class="noscript">JavaScript is disabled. The form will still submit, but validation is limited.</p>
+          </noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> 2 Pahiya. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#lead-form">Book Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
